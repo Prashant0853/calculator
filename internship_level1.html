@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Digital Agency</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #fc4a1a, #f7b733);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .hero .btn {
+      background: #ff4b2b;
+      padding: 10px 25px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .features {
+      background: linear-gradient(to right, #fc466b, #3f5efb);
+      color: white;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .feature-box {
+      width: 300px;
+      margin: 20px;
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .about {
+      background: white;
+      padding: 60px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      max-width: 600px;
+      margin: 20px;
+    }
+
+    .about-text h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .about-img {
+      animation: float 3s infinite ease-in-out;
+    }
+
+    .services {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services h2 {
+      margin-bottom: 30px;
+    }
+
+    .service-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">LANDING PAGE</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Creative Digital Agency</h1>
+    <p>We are creative and passionate about achieving better results for our clients with innovation and dedication.</p>
+    <div>
+      <button class="btn">Read More</button>
+      <button class="btn">Request a Consult</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>🚀 Launch Business</h3>
+      <p>We help launch your business with confidence and clarity.</p>
+    </div>
+    <div class="feature-box">
+      <h3>💻 Online Support</h3>
+      <p>Get 24/7 support for all your digital needs.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⏱ Time Management</h3>
+      <p>Streamline processes and save time with our strategies.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-text">
+      <h2>ABOUT US</h2>
+      <p>15 years, we passionate about achieving better results for our clients. Our professional team helps you grow with cutting-edge technology and thoughtful design.</p>
+      <p>We combine creativity and functionality to deliver powerful digital solutions.</p>
+      <button class="btn">Read More</button>
+    </div>
+    <div class="about-img">
+      <img src="https://www.pngall.com/wp-content/uploads/5/Businessman-PNG-Free-Download.png" alt="about image" width="250">
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>OUR SERVICES</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>🎯 User Experience</h3>
+        <p>Designs focused on user needs and seamless experiences.</p>
+      </div>
+      <div class="card">
+        <h3>🎨 Creative Design</h3>
+        <p>Modern and unique visuals that capture attention.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Retina Ready</h3>
+        <p>Looks stunning on any screen or device.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Creative Digital Agency | All rights reserved.
+  </footer>
+
+</body>
+</html>
